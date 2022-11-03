@@ -75,9 +75,9 @@ app.post('/note/:noteid', (req, res)=>{
     const noteid = req.params.noteid
     const newNote = req.body
 
-    for(i=0; i<notes.length; i++){
+    for(let i=0; i<notes.length; i++){
         let note = notes[i]
-        if (note.isbn === isbn){
+        if (note.noteid === noteid){
             notes[i] = newNote
         }
     }
