@@ -10,21 +10,21 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:false}))
 
 let notes = [{
-    noteid: '1',
+    id: 1,
     title: 'First Note',
     author: 'Daniel Stai',
     content: 'This is my very first note ever',
     date_created: '2022/10/28'
   },
   {
-    noteid: '2',
+    id: 2,
     title: 'Second Note',
     author: 'Jack Sparrow',
     content: 'This is my second note',
     date_created: '2022/10/28'
   },
   {
-    noteid: '3',
+    id: 3,
     title: 'Third Note',
     author: 'Aegon Targaryen',
     content: 'This is my second note',
